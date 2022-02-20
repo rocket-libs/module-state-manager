@@ -1,0 +1,30 @@
+{
+  "name":"module-state-manager",
+  "version":"0.0.1",
+  "description": "State manager that focuses on module level state management as opposed to app-wide state management.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rocket-libs/module-state-manager"
+  },
+  "keywords": [
+    "state management",
+    "react",
+    "vue"
+  ],
+  "files": ["lib/**/*"],
+  "license": "MIT",
+  "author": {
+    "name": "Nyingi Maina"
+  },
+  "scripts": {
+    "prepare" : "npm run build",
+    "version" : "git add -A src",
+    "postversion" : "git push && git push --tags",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
