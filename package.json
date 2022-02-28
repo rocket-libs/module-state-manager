@@ -1,6 +1,6 @@
 {
   "name":"module-state-manager",
-  "version":"0.0.1",
+  "version":"0.0.2",
   "description": "State manager that focuses on module level state management as opposed to app-wide state management.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

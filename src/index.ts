@@ -1,4 +1,4 @@
-export default abstract class ModuleStateManager<TRepository extends object, TModel extends object = any> {
+export default abstract class ModuleStateManager<TRepository extends object = any, TModel extends object = any> {
     public abstract repository: TRepository;
     public abstract model: TModel;
 
@@ -6,7 +6,7 @@ export default abstract class ModuleStateManager<TRepository extends object, TMo
         this.rerender = rerender;
     }
 
-    private rerender: () => void = () => {
+    public rerender: () => void = () => {
         throw new Error("Rerender not implemented. Please call setRerender()");
     };
 
