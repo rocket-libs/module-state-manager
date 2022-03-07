@@ -10,14 +10,14 @@ export default abstract class ModuleStateManager<TRepository extends object = an
         throw new Error("Rerender not implemented. Please call setRerender()");
     };
 
-    public updateRepository(partialRepository: Partial<TRepository>) {
+    protected updateRepository(partialRepository: Partial<TRepository>) {
         if (!this.repository) {
             throw new Error("Repository not yet set");
         }
         this.updateObject(this.repository, partialRepository);
     }
 
-    public updateModel(partialModel: Partial<TModel>) {
+    protected updateModel(partialModel: Partial<TModel>) {
         if (!this.model) {
             throw new Error("Model not yet set");
         }
