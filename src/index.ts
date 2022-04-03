@@ -17,7 +17,7 @@ export default abstract class ModuleStateManager<TRepository extends object = an
         this.updateObject(this.repository, partialRepository);
     }
 
-    protected updateModel(partialModel: Partial<TModel>) {
+    public updateModel(partialModel: Partial<TModel>) {
         if (!this.model) {
             throw new Error("Model not yet set");
         }
